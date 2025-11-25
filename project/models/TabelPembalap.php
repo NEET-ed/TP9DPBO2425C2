@@ -5,6 +5,13 @@ include_once ("KontrakModel.php");
 
 class TabelPembalap extends DB implements KontrakModel {
 
+    
+    public function getAllTim(): array{return [];}
+    public function getTimById($id): ?array {return [];}
+    public function addTim($nama, $markas, $tahunBerdiri): void{}
+    public function updateTim($id, $nama, $markas, $tahunBerdiri): void{}
+    public function deleteTim($id): void{}
+
     // Konstruktor untuk inisialisasi database
     public function __construct($host, $db_name, $username, $password) {
         parent::__construct($host, $db_name, $username, $password);
