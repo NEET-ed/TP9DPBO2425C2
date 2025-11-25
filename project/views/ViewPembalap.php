@@ -9,6 +9,11 @@ class ViewPembalap implements KontrakView{
         // Konstruktor kosong
     }
 
+    // for nothing
+    public function tampilTim($listTimBalap): string { return ""; }
+    public function tampilFormTim($data = null): string { return ""; }
+    ////
+
     // Method untuk menampilkan daftar pembalap
     public function tampilPembalap($listPembalap): string {
         // Build table rows

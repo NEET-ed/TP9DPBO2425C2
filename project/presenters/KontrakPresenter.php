@@ -30,4 +30,11 @@ interface KontrakPresenter
     public function tambahPembalap($nama, $tim, $negara, $poinMusim, $jumlahMenang): void;
     public function ubahPembalap($id, $nama, $tim, $negara, $poinMusim, $jumlahMenang): void;
     public function hapusPembalap($id): void;
+
+    // --- Metode Tim Balap (BARU) ---
+    public function tampilkanTim(): string;
+    public function tampilkanFormTim($id = null): string;
+    public function tambahTim($nama, $markas, $tahunBerdiri): void;
+    public function ubahTim($id, $nama, $markas, $tahunBerdiri): void;
+    public function hapusTim($id): void;
 }

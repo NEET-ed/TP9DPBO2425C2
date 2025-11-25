@@ -26,6 +26,14 @@ interface KontrakModel
     public function addPembalap($nama, $tim, $negara, $poinMusim, $jumlahMenang): void;
     public function updatePembalap($id, $nama, $tim, $negara, $poinMusim, $jumlahMenang): void;
     public function deletePembalap($id): void;
+
+    // --- Metode Tim Balap (TABEL BARU) ---
+    public function getAllTim(): array;
+    public function getTimById($id): ?array;
+    public function addTim($nama, $markas, $tahunBerdiri): void;
+    public function updateTim($id, $nama, $markas, $tahunBerdiri): void;
+    public function deleteTim($id): void;
+
 }
 
 ?>

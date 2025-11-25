@@ -21,6 +21,14 @@ class PresenterPembalap implements KontrakPresenter{
         $this->initListPembalap();
     }
 
+    //// dummies
+    
+    public function tampilkanTim(): string{ return ""; }
+    public function tampilkanFormTim($id = null): string{ return ""; }
+    public function tambahTim($nama, $markas, $tahunBerdiri): void{}
+    public function ubahTim($id, $nama, $markas, $tahunBerdiri): void{}
+    public function hapusTim($id): void{}
+    // dummies
     // Method untuk initialisasi list pembalap dari database
     public function initListPembalap(){
         // Dapatkan data pembalap dari database (dalam bentuk array assosiatif)
